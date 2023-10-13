@@ -161,8 +161,9 @@
 						in:dynamicTransition|local={{ transition: transitionIn, params: transitionInParams, enabled: transitions }}
 						out:dynamicTransition|local={{ transition: transitionOut, params: transitionOutParams, enabled: transitions }}
 					>
+
 						<button class="autocomplete-button {classesButton}" type="button" on:click={() => onSelection(option)} on:click on:keypress>
-							{@html option.label}
+							<Avatar src="https://images.unsplash.com/photo-1617296538902-887900d9b592?ixid=M3w0Njc5ODF8MHwxfGFsbHx8fHx8fHx8fDE2ODc5NzExMDB8&ixlib=rb-4.0.3&w=128&h=128&auto=format&fit=crop" width="w-32" rounded="rounded-3xl" /> {@html option.label}
 						</button>
 					</li>
 				{/each}
